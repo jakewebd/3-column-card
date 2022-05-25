@@ -1,30 +1,86 @@
 body{
 background-color: white;
+font-family: 'Lexend Deca',monospace;
 }
+.headers{
+    font-family: 'big shoulders display',monospace;
+    font-weight: 700;
+    color:hsl(0, 0%, 95%);
+    font-size:30px;
+    position: relative;
+    left:15%;
+    top:10%;
+
+}
+.car-icon{
+position: relative;
+top:10%;
+left:15%;
+width:50px;
+}
+pre{
+font-family: 'Lexend Deca',monospace;
+font-weight: 400;
+font-size:10px;
+position: relative;
+left:15%;
+top: 10%;
+color:hsla(0, 0%, 100%, 0.75);
+line-height:20px;
+
+}
+button{
+    width:100px;
+    height:30px;
+    position: relative;
+    left: 15%;
+    top:13%;
+    border-radius:50px;
+    border-style:none;
+    font-family:inherit;
+    font-size:11px;
+}
+
+.section-1 button{
+    color:hsl(31, 77%, 52%);
+}
+.section-1 button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color:white;
+
+}
+.section-2 button{
+color: hsl(184, 100%, 22%);
+}
+.section-2 button:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+.section-3 button{
+    color:hsl(179, 100%, 13%);
+}
+.section-3 button:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+button:hover{
+    color:white;
+    cursor: pointer;
+    border-style:solid;
+    border-color: white;
+}
+
+@media screen and (min-width:376px){
 .main-container{
 width: 650px;
 height: 350px;
 display: flex;
 margin-left:auto;
 margin-right: auto;
-margin-bottom: 50%;
-margin-top:30%;
+margin-bottom: 40%;
+margin-top:20%;
 flex-direction: row;
-}
-@media (max-width:375px) {
-.main-container{
-    width: 30vw;
-    height: 50vh;
-    display: flex;
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: 50%;
-    margin-top:30%;
-    flex-direction: column;
-
+flex-wrap: wrap;
 }
 
-}
 .section-1{
     background-color: hsl(31, 77%, 52%);
     width:33.33%;
@@ -41,3 +97,46 @@ flex-direction: row;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+}
+@media screen and (max-width:375px) {
+    .main-container{
+        width: 250px;
+        height: 900px;
+        display: flex;
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: 50%;
+        margin-top:30%;
+        flex-direction: column;
+        
+    
+    }
+    .section-1{
+        background-color: hsl(31, 77%, 52%);
+        height:33.33%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        
+    }
+    pre{
+        font-family: 'Lexend Deca',monospace;
+        font-weight: 400;
+        font-size:10px;
+        position: relative;
+        left:15%;
+        top: 10%;
+        color:hsla(0, 0%, 100%, 0.75);
+        line-height:15px;
+        
+        }
+    .section-2{
+        background-color: hsl(184, 100%, 22%);
+        height:33.33%;
+    }
+    .section-3{
+        background-color: hsl(179, 100%, 13%);
+        height:33.33%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    }
