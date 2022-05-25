@@ -1,0 +1,43 @@
+body{
+background-color: white;
+}
+.main-container{
+width: 650px;
+height: 350px;
+display: flex;
+margin-left:auto;
+margin-right: auto;
+margin-bottom: 50%;
+margin-top:30%;
+flex-direction: row;
+}
+@media (max-width:375px) {
+.main-container{
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 50%;
+    margin-top:30%;
+    flex-direction: column;
+
+}
+
+}
+.section-1{
+    background-color: hsl(31, 77%, 52%);
+    width:33.33%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.section-2{
+    background-color: hsl(184, 100%, 22%);
+    width:33.33%;
+}
+.section-3{
+    background-color: hsl(179, 100%, 13%);
+    width:33.33%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
